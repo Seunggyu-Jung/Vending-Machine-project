@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-    background-color: aqua;
+    
     margin: 67px auto;
     height: calc(100vh - 408px);
 }
@@ -28,7 +28,7 @@ body {
     "one three"
     "one three"
     "one three";
-    gap: 18px 13px;
+    gap: 28px;
     justify-content: center;
     align-items: center; 
 }
@@ -46,20 +46,19 @@ body {
     "k k l";
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     padding: 31px 27px;
 }
 
 .grid-b {
     background-color: #FFFFFF;
     grid-area: two;
-    align-self: flex-start;
 }
 
 .grid-c {
     background-color: #FFFFFF;
     grid-area: three;
-    align-self: start;
+    height: 507px;
 }
 
 .grid-menu1 {
@@ -176,7 +175,10 @@ body {
 .grid-menu11 {
     grid-area: k;
     border-radius: 10px;
+    width: 200px;
+    margin: auto;
     background-color: #EAE8FE;
+    border: 1px solid #BDBDBD;
 }
 
 .grid-menu12 {
@@ -195,7 +197,7 @@ body {
 
 .grid-b {
     width: 360px;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
 }
 
 .have {
@@ -209,28 +211,53 @@ body {
     font-weight: bold;
 }
 
-.grid-c.get{
-    background-color: #EAE8FE;
-}
 
-.grid-c h2 {
+.goal {
+    width: auto;
+    margin-top: 20px;
     font-size: 14px;
-    margin: 42px auto 13px;
     text-align: center;
+    line-height: 20px;
+    
 }
 
 .get {
-    margin: 55px 38px;
+    width: auto;
+    height: 364px;
+    margin: auto 37px;
     background-color: #EAE8FE;
+    border-radius: 10px;
+    border: 1px solid #BDBDBD;
 }
 
-.get-cola1 {
+.get-cola1,
+.get-cola2,
+.get-cola3,
+.get-cola4 {
+    width: auto;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     font-size: 9px;
-    margin: 0 auto;
-    padding: 12px 18px;
+    margin: 6px;
+    padding: 6px 8px;
+    background-color: #FFFFFF;
+    text-align: left;
 }
+
+.get-cola1{
+    margin-top: 12px;
+}
+
+.total {
+    width: auto;
+    margin: 6px 37px;
+    text-align: end;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+
+
 
 
