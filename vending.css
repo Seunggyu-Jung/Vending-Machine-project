@@ -2,6 +2,7 @@
 
 body {
     background: #EAE8FE;
+    margin: 0;
 }
 
 .logo img {
@@ -58,6 +59,7 @@ body {
 .grid-c {
     background-color: #FFFFFF;
     grid-area: three;
+    align-self: start;
 }
 
 .grid-menu1 {
@@ -134,6 +136,7 @@ body {
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .left-over,
@@ -191,17 +194,43 @@ body {
 
 
 .grid-b {
-    width: 306px;
-    background-color: #EAE8FE; 
+    width: 360px;
+    background-color: #FFFFFF; 
+}
+
+.have {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 27px;
+    background-color: #EAE8FE;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.grid-c.get{
+    background-color: #EAE8FE;
+}
+
+.grid-c h2 {
+    font-size: 14px;
+    margin: 42px auto 13px;
+    text-align: center;
+}
+
+.get {
+    margin: 55px 38px;
+    background-color: #EAE8FE;
+}
+
+.get-cola1 {
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 9px 27px;
-}
-
-
-.grid-c {
-    
+    font-size: 9px;
+    margin: 0 auto;
+    padding: 12px 18px;
 }
 
 
