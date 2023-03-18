@@ -12,7 +12,6 @@ body {
 }
 
 .main {
-    
     margin: 67px auto;
     height: calc(100vh - 408px);
 }
@@ -63,7 +62,6 @@ body {
 
 .grid-menu1 {
     grid-area: a;
-    width: 94px;
     border: 3px solid #6327FE;
     border-radius: 10px;
 }
@@ -93,14 +91,38 @@ body {
 
 .grid-menu2 {
     grid-area: b;
-    width: 94px;
+    background: rgba(0, 0, 0, 0.8);
     border: 3px solid #6327FE;
     border-radius: 10px;
+    position: relative;
+}
+
+
+
+.sold-out {
+    position: absolute;
+    left: 19px;
+    top: 49px;
+    width: 51px;
+    border: 1px solid black;
+    transform: rotate(-17deg);
+    background-color: #FFFFFF;
+    padding: 1px;
+}
+
+.sold-text {
+    color: #FFFFFF;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+    width: auto;
+    margin: auto;
+    text-align: center;
 }
 
 .grid-menu3 {
     grid-area: c;
-    width: 94px;
     border: 3px solid #BDBDBD;
     border-radius: 10px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
@@ -108,7 +130,6 @@ body {
 
 .grid-menu4 {
     grid-area: d;
-    width: 94px;
     border: 3px solid #BDBDBD;
     border-radius: 10px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
@@ -116,14 +137,12 @@ body {
 
 .grid-menu5 {
     grid-area: e;
-    width: 94px;
     border: 3px solid #6327FE;
     border-radius: 10px;
 }
 
 .grid-menu6 {
     grid-area: f;
-    width: 94px;
     border: 3px solid #BDBDBD;
     border-radius: 10px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
@@ -140,7 +159,7 @@ body {
 
 .left-over,
 .won {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     padding: 6px 10px;
 }
@@ -151,7 +170,7 @@ body {
     font-size: 13px;
     padding: 6px 9px;
     border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .grid-menu9 {
@@ -175,16 +194,50 @@ body {
 .grid-menu11 {
     grid-area: k;
     border-radius: 10px;
-    width: 200px;
-    margin: auto;
+    display: grid;
+    grid-template-areas:
+    "ein ein ein zwei"
+    "drei drei drei zwei";
     background-color: #EAE8FE;
     border: 1px solid #BDBDBD;
 }
 
+/* .scroll {
+    width: 4px;
+    height: 79px;
+    grid-area: zwei;
+    margin-left: auto;
+    margin-right: 3px;
+    margin-top: 9px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+} */
+
+.cola-list1,
+.cola-list2 {
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    font-size: 9px;
+    margin: auto 6px 6px 12px;
+    padding: 6px 8px;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+.cola-list1 {
+    grid-area: ein;
+    margin-top: 12px;
+}
+
+.cola-list2 {
+    grid-area: drei;
+}
+
 .grid-menu12 {
     grid-area: l;
-    width: 94px;
-    height: 106px;
+    width: auto;
     background-color: #6327FE;
     border-radius: 10px;
     color: #FFFFFF;
@@ -218,7 +271,7 @@ body {
     font-size: 14px;
     text-align: center;
     line-height: 20px;
-    
+    padding-top: 20px;
 }
 
 .get {
@@ -228,6 +281,10 @@ body {
     background-color: #EAE8FE;
     border-radius: 10px;
     border: 1px solid #BDBDBD;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .get-cola1,
@@ -237,12 +294,32 @@ body {
     width: auto;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
     font-size: 9px;
-    margin: 6px;
+    margin: 0 6px 6px 10px;
     padding: 6px 8px;
     background-color: #FFFFFF;
     text-align: left;
+}
+
+
+
+.btn-text {
+    width: auto;
+    margin: 0 10px;
+    line-height: 48px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.btn-click {
+    width: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: flex-end;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .get-cola1{
@@ -255,6 +332,17 @@ body {
     text-align: end;
     padding-bottom: 20px;
     font-size: 12px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 360px) { 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
 }
 
 
